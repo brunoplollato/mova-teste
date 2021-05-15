@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --white: #FFF;
+  --gray: #8D8D8D;
+  --green: #02AE99;  
+  --purple: #6D2080;
+}
+
+@media (max-width: 1888px) {
+  html {
+    font-size: 93.75%; //15px
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; //14px
+  }
+}
+
+body {
+  background: var(--white);
+}
+
+body, input, textarea, button {
+  font: 400 1rem Montserrat, sans-serif;
+  color: var(--gray);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}

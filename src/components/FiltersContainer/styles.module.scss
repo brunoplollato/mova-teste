@@ -1,0 +1,62 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  width: 100%;
+  padding: 3rem;
+
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    display: flex;
+
+    .filter {
+      margin: 0 !important;
+    }
+
+    .btnContainer {
+      margin: 0 !important;
+    }
+  }
+
+  .filter{
+    width: 19.75rem;
+    margin: 0 auto;
+
+    & + .filter {
+      margin-top: 2rem;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+    span {
+      color: var(--purple);
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+    }
+  }
+
+  .btnContainer {
+    text-align: right;
+
+    width: 19.75rem;
+    margin: 0 auto;
+    
+    .searchButton {
+      border-radius: 0.625rem;
+  
+      background-color: var(--purple);
+      color: var(--white);
+      border: none;
+  
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      text-transform: uppercase;
+  
+      padding: 0.625rem 2rem;
+      margin-top: 0.875rem;
+    }
+  }
+}
